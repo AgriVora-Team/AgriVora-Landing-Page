@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AgriVora - Smart crop recommendations from your soil. IoT + AI powered agriculture app for Sri Lankan farmers.">
+    <title>AgriVora - Smart Crop Recommendations for Sri Lanka</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🌱</span>
+                    <span class="logo-text">AgriVora</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#use-cases">Use Cases</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary btn-nav">Download App</button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="trust-badges">
+                        <span class="badge">🇱🇰 Sri Lanka-focused</span>
+                        <span class="badge">📊 Soil + pH + GPS</span>
+                        <span class="badge">🤖 Powered by AI</span>
+                        <span class="badge">👨‍🌾 Farmer-friendly</span>
+                    </div>
+                    <h1 class="hero-title">Know what to grow — using your soil + location</h1>
+                    <p class="hero-subtitle">Scan your soil, measure pH with an IoT sensor, use GPS + weather data, and
+                        get ranked crop recommendations with suitability scores and soil improvement tips.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large">
+                            <span class="btn-icon">📱</span>
+                            Download the App
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            <span class="btn-icon">▶️</span>
+                            See How It Works
+                        </button>
+                    </div>
+                    <p class="hero-tagline">Smart crop recommendations from your soil — made for Sri Lanka.</p>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen" id="hero-mockup"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Four simple steps to smarter farming decisions</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📸</div>
+                    <h3 class="step-title">Take/Upload Soil Photo</h3>
+                    <p class="step-description">CNN analyzes soil texture: sandy, clayey, or loamy</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔬</div>
+                    <h3 class="step-title">Measure pH</h3>
+                    <p class="step-description">ESP32 + Gravity pH sensor via Bluetooth/WiFi</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">📍</div>
+                    <h3 class="step-title">GPS Data Collection</h3>
+                    <p class="step-description">Pulls SoilGrids + OpenWeather data for your location</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🌾</div>
+                    <h3 class="step-title">Get Recommendations</h3>
+                    <p class="step-description">Ranked crops + scores + soil improvement tips</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Smart Farming</h2>
+                <p class="section-subtitle">Everything you need to make informed crop decisions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3 class="feature-title">Soil Image Analysis</h3>
+                    <p class="feature-description">Identify texture: sandy, clayey, or loamy using advanced CNN</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Real-time pH Reading</h3>
+                    <p class="feature-description">Calibrated sensor data via ESP32 for accurate measurements</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌦️</div>
+                    <h3 class="feature-title">GPS Soil + Weather</h3>
+                    <p class="feature-description">Location-based data for Sri Lankan regions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Crop Ranking</h3>
+                    <p class="feature-description">Random Forest AI with suitability scores</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title">Soil Improvement Tips</h3>
+                    <p class="feature-description">Lime, compost, and fertilizer guidance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3 class="feature-title">Manual Mode</h3>
+                    <p class="feature-description">Enter soil data and pH manually</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3 class="feature-title">Map View</h3>
+                    <p class="feature-description">Visualize your farm locations and data</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📜</div>
+                    <h3 class="feature-title">Scan History</h3>
+                    <p class="feature-description">Track all your soil tests over time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 class="feature-title">AI Chatbot</h3>
+                    <p class="feature-description">Ask farming questions, get instant answers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See AgriVora in Action</h2>
+                <p class="section-subtitle">Intuitive interface designed for farmers</p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-image" id="screenshot-1"></div>
+                    <p class="screenshot-label">Soil Scan</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-image" id="screenshot-2"></div>
+                    <p class="screenshot-label">pH Reading</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-image" id="screenshot-3"></div>
+                    <p class="screenshot-label">Crop Results</p>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-image" id="screenshot-4"></div>
+                    <p class="screenshot-label">Map & Weather</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases" id="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for Everyone in Agriculture</h2>
+                <p class="section-subtitle">From professionals to hobbyists</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=800&auto=format&fit=crop"
+                        alt="Sri Lankan Farmer" class="use-case-image">
+                    <div class="use-case-content">
+                        <div class="use-case-icon">👨‍🌾</div>
+                        <h3 class="use-case-title">Farmers</h3>
+                        <p class="use-case-description">Make data-driven decisions to maximize yield and reduce crop
+                            failure</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=800&auto=format&fit=crop"
+                        alt="Home Gardening" class="use-case-image">
+                    <div class="use-case-content">
+                        <div class="use-case-icon">🏡</div>
+                        <h3 class="use-case-title">Home Gardeners</h3>
+                        <p class="use-case-description">Grow the right crops in your backyard with confidence</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop"
+                        alt="Agricultural Student" class="use-case-image">
+                    <div class="use-case-content">
+                        <div class="use-case-icon">🎓</div>
+                        <h3 class="use-case-title">Agricultural Students</h3>
+                        <p class="use-case-description">Learn soil science and crop suitability with real data</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?q=80&w=800&auto=format&fit=crop"
+                        alt="Small Scale Grower" class="use-case-image">
+                    <div class="use-case-content">
+                        <div class="use-case-icon">🌱</div>
+                        <h3 class="use-case-title">Small-scale Growers</h3>
+                        <p class="use-case-description">Cost-effective soil testing for sustainable farming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2 class="section-title">Why Choose AgriVora?</h2>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✅</div>
+                        <div>
+                            <h3 class="benefit-title">Reduce Trial-and-Error</h3>
+                            <p class="benefit-description">Stop guessing which crops will thrive. Get science-backed
+                                recommendations based on your actual soil conditions.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📈</div>
+                        <div>
+                            <h3 class="benefit-title">Improve Yield Decisions</h3>
+                            <p class="benefit-description">Choose crops with the highest suitability scores for your
+                                land, increasing your chances of a successful harvest.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <div>
+                            <h3 class="benefit-title">Cost-Effective Testing</h3>
+                            <p class="benefit-description">Skip expensive lab tests. Get instant soil analysis using
+                                your phone and an affordable pH sensor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="stats-card">
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Sri Lankan Crops</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about AgriVora</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it work without the sensor?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! AgriVora has a manual mode where you can enter soil data and pH values manually.
+                            However, using the ESP32 pH sensor provides more accurate real-time readings for better
+                            recommendations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it accurate?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>AgriVora uses advanced CNN for soil texture analysis and Random Forest AI for crop
+                            recommendations, achieving 95% accuracy. The pH sensor is calibrated for precise
+                            measurements. Our system is trained on Sri Lankan soil and crop data.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it support Sri Lankan crops?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! AgriVora is specifically designed for Sri Lankan agriculture. We support 50+
+                            local crops including rice, tea, coconut, vegetables, and more, with data tailored to Sri
+                            Lankan soil and climate conditions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need internet?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Internet is required for GPS-based weather data and SoilGrids information. However, basic
+                            soil analysis and manual mode work offline. Your scan history syncs when you're back online.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my data safe?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We use industry-standard encryption to protect your data. Your soil scans and location
+                            data are stored securely and never shared with third parties. You have full control over
+                            your information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to grow smarter?</h2>
+                <p class="cta-subtitle">Join thousands of Sri Lankan farmers making better crop decisions</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <span class="btn-icon">📱</span>
+                        Download Now
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <span class="btn-icon">📧</span>
+                        Request Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">AgriVora</span>
+                    </div>
+                    <p class="footer-tagline">Smart crop recommendations from your soil — made for Sri Lanka.</p>
+                    <p class="footer-note">🇱🇰 Designed for Sri Lankan agriculture</p>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgriVora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
